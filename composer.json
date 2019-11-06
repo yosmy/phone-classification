@@ -1,0 +1,36 @@
+{
+    "name": "yosmy/phone-classification",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "yosmy/phone-carrier": "@dev",
+        "yosmy/phone-carrier-lookup": "@dev"
+    },
+    "require-dev": {
+        "symfony/debug": "~4",
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Phone\\": [
+                "src"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmy\\Phone\\Test\\": [
+                "test/setup",
+                "test/src"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
